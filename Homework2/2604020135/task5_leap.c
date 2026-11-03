@@ -1,0 +1,23 @@
+/*
+ * 学号：2604020135
+ * 姓名：刘如霞
+ * 题目：Homework2 - 题目5 闰年判断
+ * 编译：gcc -Wall -std=c11 task5_leap.c -o task5_leap
+ */
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main(void)
+{
+	int year;
+	printf("Enter a year: ");
+	scanf("%d", &year);
+	if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+	{
+		printf("%d is a leap year.\n", year);
+	}
+	else
+	{
+		printf("%d is not a leap year.\n", year);
+	}
+	return 0;
+}
